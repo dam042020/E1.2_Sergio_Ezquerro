@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_your_name">Introduce tu nombre</string>
+    <string name="topping">Cubierta</string>
+    <string name="whipped_cream">Nata montada</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">Cantidad</string>
+    <string name="order_summary">Resumen de la orden</string>
+    <string name="order">Ordenar</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="is_it_correct">¿Es correcto?</string>
+    <string name="email_subject">Confirmación de pedido</string>
+    <string name="Correct_your_order">Corrige tu orden</string>
+</resources>

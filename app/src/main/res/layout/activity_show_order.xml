@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowOrder">
+    <TextView
+        android:id="@+id/textView_orderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/order_summary"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_IsYourOrderCorrect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_IsYourOrderCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/is_it_correct"
+        app:layout_constraintBottom_toTopOf="@id/button_cancelOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_orderSummary" />
+
+    <Button
+        android:id="@+id/button_cancelOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goBack"
+        android:text="@string/no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_confirmOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_IsYourOrderCorrect" />
+
+    <Button
+        android:id="@+id/button_confirmOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendMail"
+
+        android:text="@string/yes"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_cancelOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_cancelOrder" />
+</androidx.constraintlayout.widget.ConstraintLayout>
