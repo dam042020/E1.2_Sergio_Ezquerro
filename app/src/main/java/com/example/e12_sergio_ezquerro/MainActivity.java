@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         tvCounter = findViewById(R.id.textView_Counter);
         etName = findViewById(R.id.EditText_Name);
-        chbWhippedCream = findViewById(R.id.checkBox_Toppings_WhippedCream);
-        chChocolate = findViewById(R.id.checkBox_Toppings_Chocolate);
+        chbWhippedCream = (CheckBox) findViewById(R.id.checkBox_Toppings_WhippedCream);
+        chChocolate = (CheckBox) findViewById(R.id.checkBox_Toppings_Chocolate);
         btnOrder = findViewById(R.id.button_Order);
 
         if (changeFromIntent()){
